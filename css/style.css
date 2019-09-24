@@ -14,6 +14,18 @@ body{
   color:white;
   background-size: cover;
   background-position: center;
+  position:relative;
+
+}
+.text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font:8px;
+  position:absolute;
+  right: 1%;
+  top: 16%;
+  width: 40px;
+
 
 }
 .container-banner{
@@ -21,16 +33,25 @@ body{
   font-size: 16px;
   text-align: center;
 }
+.body-container{
+ background-color:  #8080804d;
+
+}
 .card-trip {
-  overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+   overflow: hidden;
+   height:180px;
+
+
 }
 
 .card-trip > img {
-  height: 200px;
+
   width: 100%;
   object-fit: cover;
+  background-color: #8080804d;
+
 }
 
 .card-trip h2 {
@@ -40,64 +61,63 @@ body{
 }
 
 .card-trip p {
-  font-size: 12px;
+  font-size: 8px;
   opacity: .7;
   margin: 0;
 }
 
 
 .card-trip .card-trip-infos {
-  padding: 16px;
+  /*padding: 16px;*/
+  /*height:60px;*/
+
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: flex-end;
-  position: relative;
+
+  background-color: #8080804d;
 }
 
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
-}
+
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+
 }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr ;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 banner h1 {
@@ -108,20 +128,19 @@ banner h1 {
   font-weight: bold;
 }*/
 
-.banner p {
+.banner p{
   /*font-size: 20px;*/
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-.tabs-underlined {
+./*tabs-underlined {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-
-.tabs-underlined .tab-underlined {
+*/
+.tabs-underlined.tab-underlined {
   color: black;
   padding: 8px;
   margin: 8px 16px;
@@ -135,6 +154,5 @@ banner h1 {
   opacity: 1;
   border-bottom: 3px solid #555555;
 }
-
 
 
