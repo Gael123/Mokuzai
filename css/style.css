@@ -1,12 +1,10 @@
 
-
-
 body{
   color:white;
 }
+
 #root {
   height: 64vh;
-  /*padding:150 0px;*/
   max-width: 100%;
   font-family: sans-serif;
   font-size: 8px;
@@ -30,32 +28,29 @@ body{
   right: 1%;
   top: 16%;
   width: 40px;
-
-
 }
-.container-banner{
-  /*padding:108px 0;*/
-  /*font-size: 20px;*/
+
+.container-banner {
   text-align: center;
   display: block;
-  /*margin:auto auto;*/
+  margin:auto auto;
   max-width:240px;
   padding:120px 0;
-  /*max-height: 180px;*/
 
 }
+
 .container-banner h5{
   font-size:24px;
   display:block;
   margin:auto auto;
-
-
 }
+
 .body-container{
  background-color:  #8080804d;
  font-size: 12px;
 
 }
+
 .card-trip {
   background: #8080804d;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -67,11 +62,9 @@ body{
 }
 
 .card-trip > img {
-
   width: 100%;
   object-fit: cover;
   background-color: #8080804d;
-
 }
 
 .card-trip h5 {
@@ -96,28 +89,41 @@ body{
   width:100%;
 }
 
-//*/ Smallest device
+// Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
   }
-}*/
+  .container-banner {
+  text-align: center;
+  /*display: block;*/
+  margin:auto auto;
+  max-width:240px;
+  padding:120px 0;
 
-/*// Small devices (landscape phones, 576px and up)
+}
+}
+
+// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .cards {
     grid-template-columns: 1fr;
+
+  }
+  .footer-card{
+    font-size: 8px;
   }
 }
-*/
-/*// Medium devices (tablets, 768px and up)
+
+// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .cards {
     grid-template-columns: 1fr 1fr;
   }
-}*/
 
-/*// Large devices (desktops, 992px and up)
+}
+
+// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
@@ -129,22 +135,12 @@ body{
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}*/
-
-
-
-
-
-
-
-
-
+}
 banner h1 {
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  /*font-size: 32px;
-  font-weight: bold;*/
+
 }
 
 .banner p{
@@ -167,7 +163,6 @@ banner h1 {
   margin: auto;
   opacity: .4;
   cursor: pointer;
-  /*text-decoration: none;*/
   border-bottom: 4px solid transparent;
 }
 
@@ -177,7 +172,14 @@ banner h1 {
 }
 
 .nav-link {
-  /*text-decoration:underline;*/
   color:#000;
   font-size: 8px;
+}
+.footer-card{
+  display:flex;
+  font-size: 8px;
+}
+.footer-card h5{
+  font-size: 8px;
+  color:grey;
 }
